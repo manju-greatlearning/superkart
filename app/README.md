@@ -5,6 +5,7 @@ colorFrom: blue
 colorTo: green
 sdk: gradio
 app_file: app.py
+suggested_hardware: cpu-basic
 pinned: false
 ---
 
