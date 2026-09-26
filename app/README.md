@@ -3,10 +3,11 @@ title: SuperKart Sales Forecast
 emoji: 🛒
 colorFrom: blue
 colorTo: green
-sdk: docker
+sdk: gradio
+app_file: app.py
 pinned: false
 ---
 
 # SuperKart Sales Forecast
 
-Streamlit frontend for the SuperKart sales forecasting model.
+This Gradio app predicts product-store sales revenue using a trained SuperKart machine learning model.
