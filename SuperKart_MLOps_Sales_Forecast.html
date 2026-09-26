@@ -7549,7 +7549,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
@@ -7599,7 +7599,7 @@ Data files: ['SuperKart_clean.csv', 'test.csv', 'train.csv']
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">huggingface_hub</span><span class="w"> </span><span class="kn">import</span> <span class="n">HfApi</span><span class="p">,</span> <span class="n">upload_folder</span>
@@ -7648,7 +7648,7 @@ Data files: ['SuperKart_clean.csv', 'test.csv', 'train.csv']
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">raw_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"SuperKart.csv"</span><span class="p">)</span>
@@ -7683,7 +7683,7 @@ Data files: ['SuperKart_clean.csv', 'test.csv', 'train.csv']
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"Missing values by column:"</span><span class="p">)</span>
@@ -7726,7 +7726,7 @@ Sugar content values before cleaning: ['Low Sugar' 'Regular' 'No Sugar' 'reg']
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">clean_df</span> <span class="o">=</span> <span class="n">raw_df</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
@@ -7759,7 +7759,7 @@ Sugar content values after cleaning: ['Low Sugar' 'Regular' 'No Sugar']
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">train_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"superkart_mlops/data/train.csv"</span><span class="p">)</span>
@@ -7804,7 +7804,7 @@ Target column: Product_Store_Sales_Total
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="s2">"superkart_mlops/src/train.py"</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()[:</span><span class="mi">3000</span><span class="p">])</span>
@@ -7898,7 +7898,7 @@ print(json.dumps({"best_model": {k: v for k, v in best.items() if k != "pipeline
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"superkart_mlops/models/metrics.json"</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
@@ -7991,7 +7991,7 @@ print(json.dumps({"best_model": {k: v for k, v in best.items() if k != "pipeline
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">huggingface_hub</span><span class="w"> </span><span class="kn">import</span> <span class="n">upload_folder</span>
@@ -8038,7 +8038,7 @@ print(json.dumps({"best_model": {k: v for k, v in best.items() if k != "pipeline
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"Deployment app.py:</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
@@ -8146,7 +8146,7 @@ numpy
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="s2">"superkart_mlops/app/app.py"</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()[:</span><span class="mi">3500</span><span class="p">])</span>
@@ -8217,7 +8217,7 @@ if st.button("Predict Sales"):
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="s2">"superkart_mlops/src/upload_to_hf.py"</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
@@ -8271,7 +8271,7 @@ upload_folder(repo_id=SPACE_REPO_ID, repo_type="space", folder_path=".", allow_p
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="s2">"superkart_mlops/.github/workflows/pipeline.yml"</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
@@ -8333,7 +8333,14 @@ jobs:
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="6.-Repository-Folder-Structure">6. Repository Folder Structure<a class="anchor-link" href="#6.-Repository-Folder-Structure">¶</a></h2><p>The following folder structure supports a clean MLOps repository layout.</p>
+<h2 id="7.-Output-Evaluation-Links">7. Output Evaluation Links<a class="anchor-link" href="#7.-Output-Evaluation-Links">¶</a></h2><ul>
+<li><strong>GitHub Repository:</strong> <code>https://github.com/manju-greatlearning/superkart</code></li>
+<li><strong>GitHub Actions Run:</strong> <code>https://github.com/manju-greatlearning/superkart/actions/runs/36244369553/job/108410675842</code></li>
+<li><strong>Hugging Face Dataset:</strong> <code>https://huggingface.co/datasets/manjunathans/superkart-sales-data</code></li>
+<li><strong>Hugging Face Model:</strong> <code>https://huggingface.co/manjunathans/superkart-sales-model</code></li>
+<li><strong>Hugging Face Space / Gradio App:</strong> <code>https://huggingface.co/spaces/manjunathans/superkart-sales-app</code></li>
+</ul>
+<p>Screenshot evidence was reviewed for the GitHub repository structure and successful workflow run. The links above provide direct access to the repository, executed workflow, Hugging Face dataset, registered model, and deployed Gradio Space.</p>
 </div>
 </div>
 </div>
@@ -8342,7 +8349,7 @@ jobs:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="k">for</span> <span class="n">path</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">Path</span><span class="p">(</span><span class="s2">"superkart_mlops"</span><span class="p">)</span><span class="o">.</span><span class="n">rglob</span><span class="p">(</span><span class="s2">"*"</span><span class="p">)):</span>
@@ -8385,20 +8392,14 @@ superkart_mlops/src/upload_to_hf.py
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="7.-Output-Evaluation-Links">7. Output Evaluation Links<a class="anchor-link" href="#7.-Output-Evaluation-Links">¶</a></h2><p>Replace the placeholders below after pushing your files to GitHub and Hugging Face.</p>
-<ul>
+<h2 id="7.-Output-Evaluation-Links">7. Output Evaluation Links<a class="anchor-link" href="#7.-Output-Evaluation-Links">¶</a></h2><ul>
 <li><strong>GitHub Repository:</strong> <code>https://github.com/manju-greatlearning/superkart</code></li>
 <li><strong>GitHub Actions Run:</strong> <code>https://github.com/manju-greatlearning/superkart/actions/runs/36244369553/job/108410675842</code></li>
 <li><strong>Hugging Face Dataset:</strong> <code>https://huggingface.co/datasets/manjunathans/superkart-sales-data</code></li>
 <li><strong>Hugging Face Model:</strong> <code>https://huggingface.co/manjunathans/superkart-sales-model</code></li>
 <li><strong>Hugging Face Space / Gradio App:</strong> <code>https://huggingface.co/spaces/manjunathans/superkart-sales-app</code></li>
 </ul>
-<p>Screenshots to include in the submitted notebook/HTML if required by the evaluator:</p>
-<ol>
-<li>GitHub folder structure screenshot.</li>
-<li>GitHub Actions successful workflow screenshot.</li>
-<li>Hugging Face Gradio app screenshot.</li>
-</ol>
+<p>Screenshot evidence was reviewed for the GitHub repository structure and successful workflow run. The links above provide direct access to the repository, executed workflow, Hugging Face dataset, registered model, and deployed Gradio Space.</p>
 </div>
 </div>
 </div>
