@@ -7606,14 +7606,14 @@ Data files: ['SuperKart_clean.csv', 'test.csv', 'train.csv']
 <span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
 
 <span class="n">HF_TOKEN</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"HF_TOKEN"</span><span class="p">)</span>
-<span class="n">HF_DATASET_REPO_ID</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"HF_DATASET_REPO_ID"</span><span class="p">,</span> <span class="s2">"YOUR_HF_USERNAME/superkart-sales-data"</span><span class="p">)</span>
+<span class="n">HF_DATASET_REPO_ID</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"HF_DATASET_REPO_ID"</span><span class="p">,</span> <span class="s2">"manjunathans/superkart-sales-data"</span><span class="p">)</span>
 
 <span class="c1"># Uncomment after adding your token/repo id.</span>
 <span class="c1"># api = HfApi(token=HF_TOKEN)</span>
 <span class="c1"># api.create_repo(HF_DATASET_REPO_ID, repo_type="dataset", exist_ok=True)</span>
 <span class="c1"># upload_folder(repo_id=HF_DATASET_REPO_ID, repo_type="dataset", folder_path="superkart_mlops/data", token=HF_TOKEN)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Dataset registration code is ready. Replace YOUR_HF_USERNAME and run with HF_TOKEN."</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Dataset registration code is ready. Run with HF_TOKEN."</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -7626,7 +7626,7 @@ Data files: ['SuperKart_clean.csv', 'test.csv', 'train.csv']
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Dataset registration code is ready. Replace YOUR_HF_USERNAME and run with HF_TOKEN.
+<pre>Dataset registration code is ready for manjunathans/superkart-sales-data.
 </pre>
 </div>
 </div>
@@ -7998,12 +7998,12 @@ print(json.dumps({"best_model": {k: v for k, v in best.items() if k != "pipeline
 <span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
 
 <span class="n">HF_TOKEN</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"HF_TOKEN"</span><span class="p">)</span>
-<span class="n">HF_MODEL_REPO_ID</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"HF_MODEL_REPO_ID"</span><span class="p">,</span> <span class="s2">"YOUR_HF_USERNAME/superkart-sales-model"</span><span class="p">)</span>
+<span class="n">HF_MODEL_REPO_ID</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"HF_MODEL_REPO_ID"</span><span class="p">,</span> <span class="s2">"manjunathans/superkart-sales-model"</span><span class="p">)</span>
 
 <span class="c1"># Uncomment after adding your token/repo id.</span>
 <span class="c1"># upload_folder(repo_id=HF_MODEL_REPO_ID, repo_type="model", folder_path="superkart_mlops/models", token=HF_TOKEN)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Model registration code is ready. Replace YOUR_HF_USERNAME and run with HF_TOKEN."</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Model registration code is ready. Run with HF_TOKEN."</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -8016,7 +8016,7 @@ print(json.dumps({"best_model": {k: v for k, v in best.items() if k != "pipeline
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Model registration code is ready. Replace YOUR_HF_USERNAME and run with HF_TOKEN.
+<pre>Model registration code is ready for manjunathans/superkart-sales-model.
 </pre>
 </div>
 </div>
@@ -8029,7 +8029,7 @@ print(json.dumps({"best_model": {k: v for k, v in best.items() if k != "pipeline
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="4.-Model-Deployment">4. Model Deployment<a class="anchor-link" href="#4.-Model-Deployment">¶</a></h2><p>Deployment files were created for a Gradio app hosted on Hugging Face Spaces because Docker/Streamlit SDK was unavailable. The app downloads the registered model from the Hugging Face Model Hub, collects input features, converts them to a DataFrame, and returns the predicted sales value.</p>
+<h2 id="4.-Model-Deployment">4. Model Deployment<a class="anchor-link" href="#4.-Model-Deployment">¶</a></h2><p>Deployment files were created for a Gradio app hosted on Hugging Face Spaces because Docker SDK was unavailable. The app downloads the registered model from the Hugging Face Model Hub, collects input features, converts them to a DataFrame, and returns the predicted sales value.</p>
 </div>
 </div>
 </div>
@@ -8120,7 +8120,13 @@ demo = gr.Interface(
         gr.Dropdown(["Departmental Store", "Supermarket Type1", "Supermarket Type2", "Food Mart"], label="Store Type", value="Supermarket Type2"),
     ],
     outputs=gr.Textbox(label="Sales Forecast"),
-    title="SuperKart Sales Forecasting App
+    title="SuperKart Sales Forecasting App",
+    description="Enter product and store attributes to forecast total product-store sales revenue.",
+)
+
+if __name__ == "__main__":
+    demo.launch()
+
 
 Requirements:
 
@@ -8165,7 +8171,7 @@ st.set_page_config(page_title="SuperKart Sales Forecast", layout="centered")
 st.title("SuperKart Sales Forecast")
 st.write("Predict product-store sales revenue using the registered SuperKart model.")
 
-MODEL_REPO_ID = st.secrets.get("MODEL_REPO_ID", "YOUR_HF_USERNAME/superkart-sales-model")
+MODEL_REPO_ID = "manjunathans/superkart-sales-model"
 MODEL_FILENAME = "superkart_sales_model.joblib"
 
 @st.cache_resource
@@ -8231,9 +8237,9 @@ if st.button("Predict Sales"):
 from huggingface_hub import HfApi, upload_folder
 
 HF_TOKEN = os.environ["HF_TOKEN"]
-DATASET_REPO_ID = os.environ.get("HF_DATASET_REPO_ID", "YOUR_HF_USERNAME/superkart-sales-data")
-MODEL_REPO_ID = os.environ.get("HF_MODEL_REPO_ID", "YOUR_HF_USERNAME/superkart-sales-model")
-SPACE_REPO_ID = os.environ.get("HF_SPACE_REPO_ID", "YOUR_HF_USERNAME/superkart-sales-app")
+DATASET_REPO_ID = os.environ.get("HF_DATASET_REPO_ID", "manjunathans/superkart-sales-data")
+MODEL_REPO_ID = os.environ.get("HF_MODEL_REPO_ID", "manjunathans/superkart-sales-model")
+SPACE_REPO_ID = os.environ.get("HF_SPACE_REPO_ID", "manjunathans/superkart-sales-app")
 
 api = HfApi(token=HF_TOKEN)
 api.create_repo(DATASET_REPO_ID, repo_type="dataset", exist_ok=True)
@@ -8381,7 +8387,8 @@ superkart_mlops/src/upload_to_hf.py
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h2 id="7.-Output-Evaluation-Links">7. Output Evaluation Links<a class="anchor-link" href="#7.-Output-Evaluation-Links">¶</a></h2><p>Replace the placeholders below after pushing your files to GitHub and Hugging Face.</p>
 <ul>
-<li><strong>GitHub Repository:</strong> <code>ADD_PUBLIC_GITHUB_REPOSITORY_LINK_HERE</code></li>
+<li><strong>GitHub Repository:</strong> <code>https://github.com/manju-greatlearning/superkart</code></li>
+<li><strong>GitHub Actions Run:</strong> <code>https://github.com/manju-greatlearning/superkart/actions/runs/36244369553/job/108410675842</code></li>
 <li><strong>Hugging Face Dataset:</strong> <code>https://huggingface.co/datasets/manjunathans/superkart-sales-data</code></li>
 <li><strong>Hugging Face Model:</strong> <code>https://huggingface.co/manjunathans/superkart-sales-model</code></li>
 <li><strong>Hugging Face Space / Gradio App:</strong> <code>https://huggingface.co/spaces/manjunathans/superkart-sales-app</code></li>
@@ -8390,7 +8397,7 @@ superkart_mlops/src/upload_to_hf.py
 <ol>
 <li>GitHub folder structure screenshot.</li>
 <li>GitHub Actions successful workflow screenshot.</li>
-<li>Hugging Face Streamlit app screenshot.</li>
+<li>Hugging Face Gradio app screenshot.</li>
 </ol>
 </div>
 </div>
@@ -8407,7 +8414,7 @@ superkart_mlops/src/upload_to_hf.py
 <li>Data cleaning standardized inconsistent sugar-content values and removed duplicates while preserving the important sales-target information.</li>
 <li>Train/test splits were saved locally and prepared for registration in a Hugging Face Dataset repository.</li>
 <li>The best tuned model was Random Forest, achieving strong test-set performance with R² around 0.93.</li>
-<li>The Streamlit deployment provides a business-facing interface where users can enter product/store attributes and get predicted product-store sales.</li>
+<li>The Gradio deployment provides a business-facing interface where users can enter product/store attributes and get predicted product-store sales.</li>
 <li>The GitHub Actions workflow automates training and registration so updates pushed to <code>main</code> can refresh model and deployment artifacts.</li>
 <li>Final account-specific steps are to push the generated repo folder to GitHub, create Hugging Face dataset/model/space repos, add GitHub secrets, run the workflow, and replace the placeholder links above with public URLs.</li>
 </ul>
